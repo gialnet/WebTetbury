@@ -3,8 +3,8 @@
 include_once 'oauth2-client-master/vendor/autoload.php';
 
 $provider = new League\OAuth2\Client\Provider\Facebook(array(
-    'clientId'  =>  '463814247061914',
-    'clientSecret'  =>  'e9f005770c6e97e075566cd9210c4bcf',
+    'clientId'  =>  '264581847213478',
+    'clientSecret'  =>  'b658844e920a5158d91e4443d3a631f0',
     'redirectUri'   =>  'https://www.myempresa.eu/php/callbackFacebook.php'
 ));
 

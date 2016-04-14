@@ -1,11 +1,14 @@
 <?php
 
-include_once 'oauth2-client-master/vendor/autoload.php';
+include_once 'vendor/autoload.php';
+
+//  Authorization code: 4/8xGKzCxZqapCip02TG5bsqC4xCfLbcM_pfI8g3vR8Fs
 
 $provider = new League\OAuth2\Client\Provider\Google(array(
     'clientId'  =>  '1036825226740.apps.googleusercontent.com',
     'clientSecret'  =>  'tlNwN-uPrroReUK7ry52Zxnh',
-    'redirectUri'   =>  'https://www.myempresa.eu/php/callbackGoogle.php'
+    'redirectUri'   =>  'https://www.myempresa.eu/php/callbackGoogle.php',
+    'hostedDomain' => 'myempresa.eu',
 ));
 
 
@@ -14,19 +17,30 @@ if ( ! isset($_GET['code'])) {
 
 	// If we don't have an authorization code then get one
     $provider->authorize();
-
+    
 } else {
 
     try {
 
     	// Try to get an access token (using the authorization code grant)
-        $t = $provider->getAccessToken('authorization_code', array('code' => $_GET['code']));
+        $t = $provider->getAccessToken('authorization_code', [
+                    'code' => $_GET['code']
+                    ]);
 
         try {
 
         	// We got an access token, let's now get the user's details
-            $userDetails = $provider->getUserDetails($t);
+            //$userDetails = $provider->getUserDetails($t);
+            //
+            // Try to get an access token (using the authorization code grant)
+            $user = $provider->getResourceOwner($t);
             
+            $email = $user->getEmail();
+            $name = $user->getName();
+            $locale = $user->getLocale();
+            $link = $user->getLink();
+            $gender = $user->getGender();
+
             
             /*
              * String xPais = request.getParameter("locale");
@@ -41,13 +55,14 @@ if ( ! isset($_GET['code'])) {
             //header('Location: ServletAltaIdentidadFederada.servlet?'.$params);
             
             //print_r($userDetails);
-            $data = array();
+            /*$data = array();
             foreach ($userDetails as $attribute => $value) {
                 $data[$attribute]=$value;
                 //var_dump($attribute, $value) . PHP_EOL . PHP_EOL;
             }
-            
-            $params='name='. $data['name'] .'&email='. $data['email'].'&locale=es&gender= &link= ';
+            */
+            $params='name='.$name.'&email='.$email.'&locale='.$locale.'&gender=' .$gender. '&link= '.$link;
+            //var_dump($params);
             header('Location: ../ServletAltaIdentidadFederada.servlet?'.$params);
 
         } catch (Exception $e) {

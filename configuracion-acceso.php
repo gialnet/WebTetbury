@@ -107,7 +107,7 @@
             <li><i class="fa fa-caret-right"></i> Que es el que identifica su dirección de email con su cuenta de usuario.
             </li>
             <li><i class="fa fa-caret-right"></i> Una vez instalados los certificados en el navegador Web se puede dirigir al 
-                <a href="https://secure.tetburyss.co.uk">sección de login</a> donde se le mostrará una página de bienvenida al servicio. En caso de cualquier error o falta de autorización se mostrará una página con toda la información disponible acerca de ese error.</li>
+                <a href="https://www.myempresa.eu">sección de login</a> donde se le mostrará una página de bienvenida al servicio. En caso de cualquier error o falta de autorización se mostrará una página con toda la información disponible acerca de ese error.</li>
             <li><i class="fa fa-caret-right"></i> En la página de bienvenida le pide su dirección de e-mail y el fichero token.p12.</li>
             </ul>
 			    
@@ -126,7 +126,7 @@
         
         </br>
 
-        <p><strong>Nunca algo tan complejo fue tan fácil, sin usuarios ni contraseñas. <a href="https://secure.tetburyss.co.uk/AltaServicioIdentidadFederada.php">Pruébalo ahora.</a></strong></p>
+        <p><strong>Nunca algo tan complejo fue tan fácil, sin usuarios ni contraseñas. <a href="https://www.myempresa.eu/AltaServicioIdentidadFederada.php">Pruébalo ahora.</a></strong></p>
 
         
         

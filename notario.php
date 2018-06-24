@@ -152,7 +152,7 @@
 				<ul id="tiny">
                 
                     <li><a href="index.php" class="active">Inicio</a></li>                                  
-                    <li><a href="configuracion.html">Configuración</a></li>
+                    <li><a href="configuracion.php">Configuración</a></li>
                     <li><a href="contact.php">Contacto</a></li>
                 </ul>
                 
@@ -177,7 +177,7 @@
 <div class="page_title">
 	<div class="container">
 		<div class="title"><h1>Signature Service</h1></div>
-        <div class="pagenation">&nbsp;<a href="index.php">Inicio</a> <i>/</i> <a href="configuracion.html">Registro Electrónico
+        <div class="pagenation">&nbsp;<a href="index.php">Inicio</a> <i>/</i> <a href="configuracion.php">Registro Electrónico
         </a> <i>/</div>
 	</div>
 </div><!-- end page title --> 
@@ -195,7 +195,7 @@
     <div class="blog_post">	
         <div class="blog_postcontent">
         
-        <h3><a href="blog-post.html">Servicio de Notario Electrónico</a></h3>
+        <h3><a href="blog-post.php">Servicio de Notario Electrónico</a></h3>
         
         <div class="image_frame"><a href="http://myempresa.eu:8080"><img src="images/signature.jpg" alt="" /></a></div>
                 
@@ -306,14 +306,14 @@
             <li><a href="index.php"><i class="fa fa-angle-right"></i> Inicio</a></li>
              <li><a href="" class="active">Servicios<i class="fa fa-angle-down"></i></a>
                         <ul>
-                            <li><a href="sepa.html">Adaptado al sistema SEPA</a></li>					
-                            <li><a href="registro.html">Gestión Documental Electrónica</a></li>
+                            <li><a href="sepa.php">Adaptado al sistema SEPA</a></li>					
+                            <li><a href="registro.php">Gestión Documental Electrónica</a></li>
                             <li><a href="signatureService.html">Firma Transfronteriza Europea</a></li>
                            
                         </ul>
                     </li>  
-            <li><a href="configuracion.html"><i class="fa fa-angle-right"></i> Configuración</a></li>
-            <li><a href="contact.html"><i class="fa fa-angle-right"></i> Contacto</a></li>
+            <li><a href="configuracion.php"><i class="fa fa-angle-right"></i> Configuración</a></li>
+            <li><a href="contact.php"><i class="fa fa-angle-right"></i> Contacto</a></li>
             
 		</ul>
         
